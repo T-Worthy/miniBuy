@@ -1,0 +1,144 @@
+ <view wx:if="{{yuyin==false}}">
+     <view class='choice'>
+
+              <view class='choice-hand' >
+              手动
+              </view>
+
+              <view class='choice-record' bindtap='inputchange' >
+              语音
+              </view>
+
+       </view>
+</view>
+
+<view wx:else>
+       <view class='choice'>
+
+                        <view class='choice-hand2' bindtap='inputchange' >
+                        手动
+                        </view>
+
+                        <view class='choice-record2' >
+                        语音
+                        </view>
+        </view>
+</view>
+
+
+
+
+
+
+<form  bindsubmit="formSubmit">
+   <view class='submit-text'>
+       <view class='sub-list'>
+           <view class='list-text'>商品名称</view>
+           <view class='list-input2'>
+                 <input name='commName' placeholder='请手动或扫码输入商品名称' value='{{comm.commName}}' /> </view>
+           
+           <view wx:if="{{yuyin==false}}" class='image-list' bindtap='saoma'>
+                <image class='list-image' src='../Image/sweep.png'></image>
+           </view>
+     </view>
+       <view class='list-image-text'>
+             <view class='list-text2'>商品图片</view>
+             <view>
+         <image class="image-number" bindtap="upimg" src='{{pic}}'  bindtap='choosePicture'></image> 
+         </view>
+       </view>
+         
+   </view>
+    
+    <view class='submit-number'>
+       <view class='sub-list'>
+           <view class='list-text'>商品进价</view>
+           <view class='list-input'>
+                 <input name='inprice' placeholder="请输入商品进价" type='digit' value='{{comm.inprice}}'/> </view>
+           
+           
+     </view>
+     
+       <view class='sub-list'>
+           <view class='list-text'>商品售价</view>
+           <view class='list-input'>
+                 <input name='outprice'  placeholder="请输入商品售价" type='digit'  value='{{comm.outprice}}'/> </view>
+           
+           
+     </view>
+     <view class='sub-list'>
+           <view class='list-text'>初始库存</view>
+           <view class='list-input'>
+                  <input name='stock' type='number' placeholder="请设置初始库存值" value='{{comm.stock}}' /> </view>
+           
+           
+     </view>
+     
+    </view>
+  
+
+     <view class='submit-choice'>
+            <view class='sub-list'>
+              <view class='list-text'>库存单位</view>
+              <view class='list-input'>
+                      <picker  name='classifier' bindchange="bindPickerChange" value="{{array[index]}}" range="{{array}}">
+                        <view class='xz'>
+                          {{array[index]}}
+                        </view>
+                         <view class="navigator-arrow"></view>
+                  </picker>
+                   </view>
+                   
+            </view>
+              <view class='sub-list'>
+              <view class='list-text'>商品分类</view>
+              <view class='list-input'>
+                      <navigator url='/pages/classify/classify'>  <input name='classify' type='number'  value='{{classify.name}}' /> <view class="navigator-arrow"></view> </navigator>
+                   </view>
+                   
+            </view>
+     </view>
+       
+
+                        
+      <button form-type='submit' class="tj">提交</button>
+</form> 
+
+
+ <view wx:if="{{yuyin}}" >
+
+        <view  wx:if="{{isRecord === false}}">
+
+                    <view class="page-body-buttons">
+
+                        <view class="page-body-button" bindtap="startRecord">
+                          <image src='/pages/Image/record.png'></image>
+                        </view>
+                
+                      </view>
+        </view>
+
+            <view wx:else>
+
+
+                <view class="page-body-buttons">
+
+                      <view class="page-body-button" bindtap="stopRecord">
+                        <view class="button-stop-record"></view>
+                      </view>
+
+                </view>
+          </view>
+   
+
+    <!-- <checkbox class='list-text'  value="" checked=""/>是否开启方言模式 -->
+
+
+</view>
+
+
+
+
+
+
+ 

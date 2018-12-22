@@ -1,0 +1,123 @@
+/* pages/statistics/line.wxss */
+
+.statistics-top{
+  height:11%;
+  background-color: #f4ea2a
+}
+.top-button{
+  display: flex;
+  padding-left:20rpx ;
+  padding-top: 40rpx;
+  height: 90rpx;
+  font-size: 30rpx;
+}
+.button-week{
+   height: 55rpx;
+  border: 1rpx solid black;
+  width: 150rpx;
+  text-align: center;
+  padding-top: 10rpx;
+  border-bottom-left-radius: 20rpx;
+  border-top-left-radius: 20rpx
+}
+.week{
+  height: 55rpx;
+ border: 1rpx solid black;
+  width: 150rpx;
+  text-align: center;
+  padding-top: 10rpx;
+  border-bottom-left-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  background-color: black;
+  color: #f4ea2a
+}
+.button-month{
+   height: 55rpx;
+  border-bottom: 1rpx solid black;
+   border-top: 1rpx solid black;
+  width: 150rpx;
+  text-align: center;
+  padding-top: 10rpx
+}
+.month{
+   border-bottom: 1rpx solid black;
+   border-top: 1rpx solid black;
+   height: 55rpx;
+  border: 1rpx solid black;
+  width: 150rpx;
+  text-align: center;
+  padding-top: 10rpx;
+  background-color: black;
+  color: #f4ea2a
+}
+.button-year{
+   height: 55rpx;
+  border: 1rpx solid black;
+  width: 150rpx;
+  text-align: center;
+  padding-top: 10rpx;
+  border-bottom-right-radius: 20rpx;
+  border-top-right-radius: 20rpx
+}
+.year{
+   height: 55rpx;
+    border: 1rpx solid black;
+  width: 150rpx;
+  text-align: center;
+  padding-top: 10rpx;
+  border-bottom-right-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  background-color: black;
+  color: #f4ea2a
+}
+.body{
+  height:89%;
+  
+}
+.body-week{
+  height: 55rpx;
+  border-bottom: 1rpx solid #d8d8d8
+}
+.this-week{
+  height: 54rpx;
+  width: 200rpx;
+  padding-top: 1rpx;
+  text-align: center;
+  font-size: 35rpx;
+  border-bottom: 1rpx solid black
+}
+.week-money{
+  margin-left: 30rpx;
+ width: 92%;
+  height: 100rpx;
+  padding-top: 20rpx;
+  border-bottom: 1rpx solid #d8d8d8
+}
+.money{
+  padding-left: 30rpx;
+  font-size: 30rpx
+}
+.picture{
+  height: 350rpx;
+  border-bottom: 1rpx solid #d8d8d8
+}
+.title{
+  height: 50rpx;
+  font-size: 30rpx;
+  padding-left: 30rpx
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    -webkit-text-size-adjust:none;
+    -webkit-user-select: none;
+    font-size: 35rpx;
+    color: #333;
+    font-family: Helvetica,Arial,"Helvetica Neue","Droid Sans","Microsoft YaHei",sans-serif;
+}
+.canvas {
+    width: 100%;
+    height: 200px;
+}

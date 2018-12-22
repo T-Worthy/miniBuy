@@ -1,0 +1,12 @@
+<view class='logo'>
+      <image class='image-logo' src='/pages/Image/logo.png'></image>
+</view>
+
+<view>
+      <view class='our'>请联系我们</view>
+      <view class='our-cord'>
+           <image class='image-cord' src='/pages/Image/2wm.jpg'></image>
+      </view>
+</view>
+
+

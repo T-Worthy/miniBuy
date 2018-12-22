@@ -1,0 +1,44 @@
+<!--导航左侧-->
+<view class='nav'>
+
+<view class='nav-left'>
+     <view wx:for="{{classifyArray}}">
+          <!--当前项的id等于item页的id,那个就是当前状态-->
+          <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->
+           <view class="nav-left-items {{curIndex == index ? 'active' : ''}}" bindtap='switchRightTab'  id="{{index}}">{{item.classify}} </view>
+
+     </view>
+</view>
+
+<!--右侧栏-->
+ <view class='nav-right'> 
+    <!--如果有数据，才遍历，但我没看懂它的判断是什么意思-->
+
+         <!--它for循环里的东西也不知道是什么-->
+            <view   wx:for="{{commList}}"> 
+                    <view class='nav-right-items'>
+                        <view class='item-border'>  
+                                <navigator url='/pages/goods/goods?id={{item.id}}&index={{index}}'>
+                                        <view class='item-image'>
+                                            <image src='{{item.pictureUrl}}'></image>
+                                        </view>
+                                          <view class='item-name'>
+                                                {{item.commName}}
+                                          </view>
+                                          <view class='end-stock'>
+                                              ￥{{item.outprice}}
+                                          </view>
+                                          <view class='end-number'>
+                                              库存:{{item.stock}}{{item.classifier}}
+                                          </view>
+                                </navigator>
+                          </view>
+                  </view>  
+            </view >
+    
+</view>
+
+
+
+
+</view>

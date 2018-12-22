@@ -1,0 +1,60 @@
+{
+  "pages":[
+     
+"pages/loading/loading",
+   "pages/init/init",
+"pages/statistics/line",
+"pages/work/work",
+"pages/workstock/workstock",
+    "pages/statistics/statistics",
+  "pages/about/about",
+    "pages/check/check",
+    "pages/classify/classify",
+    "pages/index/index",
+    "pages/order/order",
+   "pages/text/text",
+   "pages/text2/text2",
+    "pages/hand/hand",
+    "pages/shopping/shopping",
+    
+    "pages/stock/stock",
+    
+    "pages/stockIn/stockIn",
+    "pages/jh/jh",
+    
+    
+    "pages/goods/goods",
+    "pages/bill/bill"
+   
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f4ea2a",
+    "navigationBarTitleText": "Mini零售",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "pages/shopping/shopping",
+      "text": "销售",
+      "iconPath": "pages/Image/购物车空.png",
+      "selectedIconPath": "pages/Image/购物车满.png"
+    },
+    {
+      "pagePath": "pages/work/work",
+      "text": "小店",
+      "iconPath": "pages/Image/货物.png",
+      "selectedIconPath": "pages/Image/货物2.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "我",
+      "iconPath": "pages/Image/我的.png",
+      "selectedIconPath": "pages/Image/我的2.png"
+    }]
+    
+  }
+}

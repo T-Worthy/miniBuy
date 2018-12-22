@@ -1,0 +1,33 @@
+<view class='workstock-top'>
+      <view class='image-view1'>
+             <image class='top-image2' src='/pages/Image/logo.png'></image>
+         </view>
+          
+               <view class='image-view2'>
+                    <image  class='top-image1' src='/pages/Image/work.png'></image>
+               </view>
+               <view class='top-text'>
+                     库存管理
+               </view>
+  
+</view>
+<view class='workstock-end'>
+        <view class='navigator-box'>
+              <navigator url="/pages/stockIn/stockIn" class="navigator">
+                      <view class='navigator-image'>
+                          <image class='end-image' image src='/pages/Image/buy.png'></image>
+                     </view>
+
+                     <view class="navigator-text">采购入库</view>
+                      <view class="navigator-arrow"></view>
+               </navigator>
+               <navigator url="/pages/jh/jh" class="navigator">
+                      <view class='navigator-image'>
+                          <image class='end-image' image src='/pages/Image/add.png'></image>
+                     </view>
+
+                     <view class="navigator-text">新建商品</view>
+                      <view class="navigator-arrow"></view>
+               </navigator>
+</view>
+</view>

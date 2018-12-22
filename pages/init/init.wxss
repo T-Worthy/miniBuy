@@ -1,0 +1,66 @@
+/* pages/init/init.wxss */
+page{
+  height: 100%;
+  background-color: #f3f5f6
+}
+.head{
+ text-align:center;
+height: 100rpx;
+padding-top: 40rpx
+}
+.submit-list{
+    padding: 20rpx 30rpx 40rpx;
+    height: 40rpx
+}
+.text-input{
+  padding-top: 4rpx
+}
+.list-text{
+
+    margin: 20rpx 0;
+    padding-top: 10rpx;
+  height: 70rpx;
+  background-color: #FFFFFF;
+  font-size: 41rpx;
+  border-radius: 4rpx;
+  overflow: hidden;
+  display: flex
+}
+.list-text-big{
+  margin: 20rpx 0;
+  padding-top: 10rpx;
+  height: 330rpx;
+  background-color: #FFFFFF;
+  font-size: 41rpx;
+  border-radius: 4rpx;
+  overflow: hidden
+}
+
+.list-text-time{
+  width:400rpx;
+  text-align: center
+}
+.submit-checkbox{
+margin-top: 310rpx;
+margin-left: 30rpx;
+display: flex;
+height: 100rpx
+}
+.checkbox-text{
+  color: blue;
+  width: 300rpx;
+}
+
+.submit-button{
+   margin-top: 20rpx;
+background-color: #f4ea2a;
+  width: 700rpx; 
+ height: 100rpx 
+}
+.text-name{
+  width: 380rpx;
+}
+.list-text-big-text{
+  height: 270rpx;
+  width: 690rpx
+}

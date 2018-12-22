@@ -1,0 +1,51 @@
+        
+<view class='goods-body'>
+      
+      <view  class='goods-image' wx:if="{{!picIsNull}}">
+          <image  bindtap="upimg" src='{{comm.pictureUrl}}'  ></image>   
+      </view> 
+
+     <view class="body-title">
+         <view class="title-text">商品名称：</view>
+         <view class="title-text">{{comm.commName}}</view>
+    </view>
+
+     <view class="body-title">
+         <view class="title-text">进价：</view>
+         <view class="title-text">{{comm.inprice}}</view>
+     </view>
+    
+     <view class="body-title">
+         <view class="title-text">售价：</view>
+         <view class="title-text">{{comm.outprice}}</view>
+     </view>
+    
+     <view class="body-title">
+         <view class="title-text">库存：</view>
+         <view class="title-text">{{comm.stock}}</view>
+     </view>
+
+     <view class="body-title">
+         <view class="title-text">单位：</view>
+         <view class="title-text">{{comm.classifier}}</view>
+     </view>
+
+     <view class="body-title">
+         <view class="title-text">利润：</view>
+         <view class="title-text">{{comm.profit}}</view>
+     </view>
+
+       <view class="body-title">
+         <view class="title-text">总销量：</view>
+         <view class="title-text">{{comm.sale}}</view>
+     </view>
+</view>
+     <view class='body-button'>
+        <view>
+             <navigator url="/pages/stockIn/stockIn?id={{id}}">
+                  <button  class="button-buy">进货</button>
+             </navigator>
+        </view>
+        <button class="button-delete" bindtap='delete'>删除</button>
+      </view>
+

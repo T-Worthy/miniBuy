@@ -1,0 +1,29 @@
+<view class='check-top'>
+
+     <view class='top-remain'>结余</view>
+     <view class='top-remain-monet'>{{profit}}</view>
+     <view class='top-end'>
+          <view class='end-income'>收入</view>
+          <view class='income-money'>{{getMoney}}</view>
+          <view class='end-null'> |</view>
+          <view class='end-pay'>支出</view>
+          <view class='pay-money'>{{cost}}</view>
+     </view>
+
+</view>
+
+<scroll-view class='check-scroll' scroll-y="true">
+
+      <view class='scroll-title'>
+          <view class='title-time'>日期</view>
+          <view class='title-income'>收入</view>
+          <view class='title-pay'>支出</view>
+      </view>
+
+      <view class='scroll-list'  wx:for="{{ProfitList}}">
+          <view class='list-time'>{{item.date}}</view>
+          <view class='list-income'>{{item.getMoney}}</view>
+          <view class='list-pay'>{{item.cost}}</view>
+      </view>
+
+</scroll-view>

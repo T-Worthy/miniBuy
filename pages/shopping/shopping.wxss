@@ -1,0 +1,204 @@
+page{
+  background-color: #f3f5f6
+}
+.shopping-srcoll{
+  height: 690rpx;
+}
+.srcoll-title{
+  width: 100%;
+  display: flex;
+  height: 80rpx;
+  font-size: 35rpx;
+  background-color:  #f4ea2a;
+  color: gray
+}
+.title-record{
+border: 1rpx solid black;
+background-color: black;
+color: #f4ea2a;
+width: 100rpx;
+height: 50rpx;
+text-align: center;
+border-bottom-left-radius: 20rpx;
+border-top-left-radius: 20rpx;
+margin-top: 10rpx;
+margin-left: 530rpx;
+}
+.title-hand{
+border: 1rpx solid black;
+background-color: #f4ea2a;
+color: black;
+width: 100rpx;
+height: 50rpx;
+text-align: center;
+border-bottom-right-radius: 20rpx;
+border-top-right-radius: 20rpx;
+margin-top: 10rpx;
+}
+.srcoll-list{
+  width: 100%;
+  height: 200rpx;
+  border-bottom: 1rpx solid #d8d8d8;
+  display: flex
+}
+.list-image{
+ height: 100%;
+ width: 150rpx;
+ 
+}
+image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.image-name{
+  margin: 20rpx;
+}
+.list-text{
+  width: 650rpx;
+  height: 100%;
+  padding-left: 50rpx;
+  font-size: 30rpx
+}
+.text-top{
+  width: 100%;
+  height: 50%;
+  
+  display: flex
+}
+.text-end{
+  width: 100%;
+  height: 50%;
+  display: flex
+}
+.text-price{
+  height: 100%;
+  width: 40%;
+}
+.text-name{
+  height: 100%;
+  width: 53%;
+  padding-left: 20rpx;
+  padding-top: 30rpx
+}
+.text-price{
+  height: 100%;
+  width: 47%;
+  padding-top: 30rpx
+}
+.text-number{
+  height: 100%;
+  width: 55%;
+  display: flex
+}
+.button-decrease{
+  height: 50rpx;
+  width: 30rpx;
+  font-size: 20rpx;
+  margin-left: 0rpx;
+  padding: 0;
+  margin-right: 0
+}
+.button-add{
+  height: 50rpx;
+  width: 30rpx;
+  font-size: 20rpx; padding: 0;
+  margin-left: 0rpx;
+  margin-right: 0
+}
+.number-digit{
+  width: 100rpx;
+  text-align: center
+}
+.text-money{
+  height: 100%;
+  width: 45%
+}
+.block-buy{
+  display: flex;
+  height: 110rpx;
+  border: 1rpx solid gainsboro;
+  font-size: 30rpx
+}
+.buy-text{
+  display: flex;
+padding-top: 30rpx;
+}
+.buynumber{
+  margin-left: 20rpx;
+}
+.clear{
+  margin-left: 113rpx;
+}
+.buy{
+  background-color:  #f4ea2a
+}
+button{
+  width: 170rpx;
+  height: 110rpx
+}
+image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.page-body-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20rpx;
+}
+.page-body-buttons {
+
+  display: flex;
+  justify-content: space-around;
+}
+.page-body-button {
+  width: 250rpx;
+  text-align: center;
+}
+.button-stop-record {
+  width: 110rpx;
+  height: 110rpx;
+  border: 20rpx solid #fff;
+  background-color: #f55c23;
+  border-radius: 130rpx;
+  margin: 0 auto;
+}
+
+.name{
+  width:35%;
+  padding-left: 70rpx
+}
+.number{
+  width: 20%
+}
+.price{
+  width: 20%
+}
+.money{
+  width: 25%;
+  text-align: center
+}
+.body{
+  display: flex;
+  height: 60rpx;
+  width: 100%;
+  font-size: 40rpx;
+  border-bottom: 1rpx solid #d8d8d8
+}
+.body-name{
+  width:35%;
+  text-align: center
+}
+.body-number{
+  width: 20%;
+  text-align: center
+}
+.body-price{
+  width: 20%;
+  text-align: center
+}
+.body-money{
+  width: 25%;
+  text-align: center
+}

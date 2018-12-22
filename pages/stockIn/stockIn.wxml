@@ -1,0 +1,121 @@
+<form  bindsubmit="formSubmit" >
+      <view wx:if='{{!ischoose}}' class='stock-button' >
+        <view class='navigator-box'>
+              <view class="navigator">
+                      <view class='navigator-image'>
+                          <image class='end-image' image src='/pages/Image/add.png'></image>
+                     </view>
+                  
+                   <view class="navigator-text">选择商品</view>
+                   
+                      <picker class='nav-picker' name='classifier' bindchange="bindPickerChange" value="{{goods[index].commName}}" range="{{commArray}}">
+                      <view class='picker-text'>
+                      
+                            {{goods[index].commName}}
+                      </view>
+                      </picker>
+                    <view class="navigator-arrow"></view>
+                  
+                  
+               </view>
+               </view>
+    </view>
+
+ <view wx:else>
+    
+     <view class='submit-time'>
+         <view class='time-text'>入库时间</view>
+         <view class='time-input'><input name="time" value ="{{today}}"></input></view>
+          
+          
+      </view>
+
+
+
+      <view class='submit-good'>
+          <view class='good-top'>
+          <view class='top-image'>
+           <image  src='{{comm.pictureUrl}}'></image>
+          </view>
+          <view class='top-text'>
+            <view class='name'>{{comm.commName}} </view>
+            <view class='text-number'>
+              <view class='number-money'>
+             <!-- {{comm.outprice}} -->
+              </view>
+              <view class='number-stock'>
+              库存:{{comm.stock}}
+              </view>
+            </view>
+          </view>
+               
+          </view>
+
+
+          <view class='good-end'>
+              <view class='end-number'>
+                   <view class='end-text1'>采购数量
+                   </view>
+                   <view class='end-choice'>
+                      <!-- <button class='choice-button'><view class='button-text'>-</view></button> -->
+                      <view class='money-input'> <input name='number' bindblur="cost" type='number' placeholder='输入数量'/></view>
+                      
+                      <!-- <button class='choice-button'><view class='button-text'>+</view></button> -->
+                   </view>
+              </view>
+              <view class='end-money'>
+                     <view class='end-text2'>进价金额
+                   </view>
+                    <view class='end-choice'>
+                    <view class='money-input'>
+                     <input disabled="true" name="money" type='number' placeholder='{{comm.inprice}}'/>
+                    </view>
+                     
+                   </view>
+              </view>
+              <view class='color'>
+                                    <view class='end-money'>
+                     <view class='end-text2'>售价金额
+                   </view>
+                    <view class='end-choice'>
+                    <view class='money-input'>
+                     <input disabled="true" name="money" type='number' placeholder='{{comm.outprice}}'/>
+                    </view>
+                     
+                   </view>
+              </view>  
+
+              </view>
+          </view>
+
+
+          <view class='sub-end'>
+              <view class='cost-mony'>合计金额￥{{cost}}</view>
+              <view class="all-button">
+              <button form-type='submit' class='end-up '>提交进货</button>
+              </view>
+          </view>
+      </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>

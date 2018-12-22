@@ -1,0 +1,51 @@
+page{
+  background-color: #f3f5f6 
+}
+.bill-title
+{
+   display: flex;
+   background-color: #f4ea2a 
+}
+.titile-pay{
+  margin-left: 150rpx;
+}
+.bill-name-title{
+  display: flex;
+   width:100%; 
+  border-bottom: 1rpx solid #D8D8D8;
+  color: grey;
+}
+.name-name{
+  width:42%;
+  font-size: 15px;
+}
+.name-number{
+  width:37%;
+  font-size: 15px;
+}
+.name-all{
+  width:20%;
+  font-size: 15px;
+}
+.bill-list{
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #D8D8D8;
+  height: 50px;
+  background-color: white
+}
+.list-name{
+  width: 40%;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list-number{
+  width: 35%
+}
+.list-cost{
+  width: 25%
+}
+
+

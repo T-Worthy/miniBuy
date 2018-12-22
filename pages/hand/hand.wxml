@@ -1,0 +1,66 @@
+ <view class='srcoll-title'>
+        <view class='title-record' bindtap='changeback'>语音</view>
+        <view class='title-hand'>手动</view> 
+ </view>
+
+
+
+    <scroll-view class='shopping-srcoll'  scroll-y="true" >
+          
+         <view wx:if="{{!(shoppingListLength==0)}}"  class='srcoll-list'wx:for="{{shoppingList}}"  id="{{index}}" bindlongpress='clearOne'>
+                        <view class='list-image'>
+                            <image class='image-name' src='{{item.pictureUrl}}'></image>
+                        </view>
+                <view class='list-text'>
+                        <view class='text-top'>
+                              <view class='text-name'>{{item.commName}}</view>
+                              <view class='text-price'>售价：{{item.outprice}} /{{item.classifier}}</view>
+                        </view>
+                      
+                    <view class='text-end'>
+                     
+                        <view class='text-number'>
+                            <button  id="{{index}}" class='{{dec_class}}' bindtap='dec'>-</button>
+                             <view class='number-digit'>{{item.number}}</view> 
+                             <button  id="{{index}}"class='button-add' bindtap='add'>+ </button>
+                        </view>
+                           <view class='text-money'>合计：{{item.outprice*item.number}}</view>
+                    </view>
+                    
+                </view>
+             </view>
+         
+       
+         
+
+</scroll-view>
+
+ <view class='block-buy'>
+      <view class='buy-text'>
+            <view class='buynumber'>数量：{{buynumber}}</view>
+            <view class='buynumber'>合计：￥{{money}}</view>
+      </view>
+
+       <view class='clear'>
+              <button bindtap='clear'>清空</button>
+       </view>
+       <view>
+           <button class='buy'  bindtap='buy'>结算</button>
+       </view>
+</view>
+
+<scroll-view class='shopping-srcoll'  scroll-y="true">
+        <view class="nav"  wx:for="{{goods}}" wx:key="{{id}}" id="{{index}}" bindtap='select'>
+            <view class='nav-image'>
+                  <image class='image-name' src='{{item.pictureUrl}}'></image>
+             </view>
+           <view class='nav-text'>
+               <view class='text-name'>{{item.commName}}
+               </view>
+               <view class='text-number'>
+                   <view class='number-outprice'>￥{{item.outprice}}/{{item.classifier}}</view>
+                   <view class='number-stock'>库存:{{item.stock}}</view>
+               </view>
+           </view>
+      </view>
+</scroll-view>

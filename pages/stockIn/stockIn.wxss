@@ -1,0 +1,238 @@
+/* pages/stockIn/stockIn.wxss */
+page{
+background-color: #f3f5f6;
+}
+.submit-time{
+  margin-top: 20rpx;
+  background-color: white;
+  height: 80rpx;
+  display: flex;
+  font-size: 30rpx;
+}
+.test{
+  display: flex
+}
+.time-text{
+  padding: 20rpx
+}
+.time-input{
+  height: 100%;
+  width: 590rpx;
+  padding-top: 15rpx;
+  text-align: center
+}
+.stock-button{
+  margin-top: 20rpx
+}
+.navigator-box {
+  position: relative;
+  background-color: #ffffff;
+  line-height: 1.41176471;
+  font-size: 34rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx
+}
+.navigator-box-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.navigator {
+  /* padding: 30rpx; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-bottom: 1rpx solid #f3f3f3;
+  background-color: #ffffff;
+}
+.navigator:before {
+  content: " ";
+  position: absolute;
+  left: 30rpx;
+  top: 0;
+  right: 30rpx;
+  height: 1px;
+  color: #D8D8D8;
+}
+.navigator:first-child:before {
+  display: none;
+}
+.navigator-text {
+  margin-left: 20rpx;
+  height: 100%;
+  padding-top: 30rpx;
+   margin-top: 5rpx;
+   flex: 1.2;  
+  font-size: 30rpx;
+}
+.nav-picker{
+   flex: 3;  
+}
+.picker-text{
+  padding-left: 350rpx
+}
+.navigator-arrow {
+    padding-right: 26rpx;
+
+}
+.navigator-arrow {
+  padding-right: 26rpx;
+  position: relative;
+}
+.navigator-arrow:after {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 2rpx 2rpx 0 0;
+  border-color: #888888;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+   top: 50%;
+   margin-top: -8rpx;  
+  right: 28rpx;
+}
+.navigator-image{
+  padding-left: 10rpx;
+  padding-top: 5rpx
+}
+.end-image{
+  width: 50rpx;
+  height: 50rpx
+}
+
+.submit-good{
+  margin-top: 35rpx;
+  width: 100%;
+  height: 550rpx;
+  background-color: white
+}
+.color{
+  background-color: white;
+  height: 140rpx
+}
+
+.good-top{
+  width: 100%;
+  height: 50%;
+  border-bottom: 1rpx solid #f3f5f6;
+  display: flex
+}
+image{
+  height: 200rpx;
+  width: 200rpx
+}
+.top-image{
+  margin: 25rpx
+}
+.top-text{
+  height: 100%;
+  width: 499rpx
+}
+.name{
+  padding-top: 35rpx;
+  height:100rpx;
+  width: 100%;
+   font-size: 35rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 5rpx;
+}
+.text-number{
+  padding-top: 35rpx;
+  height: 70rpx;
+  width: 100%;
+   font-size: 35rpx;
+   color: gray;
+   display: flex
+}
+.number-money{
+  width: 50%;
+  color: red
+}
+.number-stock{
+  width: 50%
+}
+.good-end{
+  height: 50%;
+  width: 100%;
+  font-size: 35rpx
+}
+.end-number{
+  height: 50%;
+  display: flex
+}
+.end-money{
+  height: 50%;
+  display: flex
+}
+.end-text1{
+  width: 50%;
+  padding-left: 50rpx;
+  padding-top: 47rpx
+  
+}
+.end-text2{
+  width: 50%;
+  padding-left: 50rpx;
+  padding-top: 35rpx
+  
+}
+.end-choice{
+   width: 50%;
+   display: flex
+}
+.choice-button{
+  margin-top: 40rpx;
+  height: 57rpx;
+  margin-left: 0rpx;
+  margin-right: 0rpx;
+  background-color: white;
+  width: 80rpx;
+  line-height:1.5;
+
+}
+input{
+text-align: center
+}
+.number-input{
+  width: 150rpx;
+  height:50rpx;
+  border: 1rpx solid #888888;
+  margin-top: 40rpx
+}
+.button-text{
+
+  padding-top: -10rpx
+}
+.money-input{
+  width: 300rpx;
+  height: 50rpx;
+  border: 1rpx solid #888888;
+   margin-top: 35rpx
+}
+.sub-end{
+  width: 100%;
+  background-color: white;
+  height: 120rpx;
+  margin-top:370rpx;
+  display: flex
+}
+.cost-mony{
+  padding-top: 40rpx;
+  padding-left: 35rpx;
+  font-size: 30rpx;
+  width: 300rpx
+}
+.end-up{
+  width: 300rpx;
+  background-color: #f4ea2a;
+  margin-left: 120rpx;
+  margin-top: 20rpx
+}
+.all-button{
+ width: 500rpx
+}

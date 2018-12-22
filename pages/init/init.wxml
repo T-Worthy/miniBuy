@@ -1,0 +1,57 @@
+<view class='head'>{{mess}}</view>
+
+<form  bindsubmit="formSubmit">
+     <view class='submit-list'>
+         <view class="list-text">
+            <view class='text-name'> 商店名称：</view>
+            <view class='text-input'> 
+                <input name='shopName' /> 
+            </view>
+          </view>
+     </view>
+
+    <view class='submit-list'>
+         <view class="list-text">
+             <view class='text-name'> 联系电话：</view>
+             <view class='text-input'>
+                 <input name='tel' type='number'  maxlength='11'/> 
+             </view>
+         </view>
+    </view>
+
+    <view class='submit-list'>
+         <view class="list-text">
+            <view class='text-name'> 店铺地址：</view>
+            <view class='text-input'>  
+                <input name='address' /> 
+            </view>
+         </view>
+    </view>
+
+    <view class='submit-list'>
+           <view class="list-text">
+                <view>你习惯的语速是:</view>
+                     <picker  name='speakSpeed' bindchange="bindPickerChange" value="{{temp}}" range="{{speedArray}}">
+                            <view class='list-text-time'>{{temp}}秒</view>
+                     </picker>
+                 </view>
+           </view>
+
+    <view class='submit-list'>
+           <view class="list-text-big">
+                  <view> 简单介绍：</view>
+                  <view > <textarea class='list-text-big-text' maxlength='120' /> </view>
+           </view>
+    </view>
+
+    <view class='submit-checkbox'>
+            <checkbox-group bindchange="checkboxChange"> 
+                  <label class="checkbox">
+                       <checkbox /> 我同意 
+                  </label>
+            </checkbox-group> 
+            <navigator class='checkbox-text' url="/pages/text/text"> 【申请协议】 </navigator> 
+    </view>
+
+    <button form-type='submit' class="submit-button" disabled='{{check}}'>提交</button>
+</form>

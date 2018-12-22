@@ -1,0 +1,35 @@
+<view hidden="{{!isOld}}">
+<view class="a">
+<text>欢迎回来</text>
+</view>
+<view class="b">
+<button bindtap='goShopping' class="dj"> 点击进入 </button>
+</view>
+</view >
+
+
+
+
+
+
+<view  hidden="{{isOld}}">
+  <view class="a">
+  <view>
+  <text>您好新用户\n 请先来注册</text>
+</view>
+
+
+
+</view>
+<view class="b">
+<view>
+ <button bindtap='goInit'class="dj" > 点击注册 </button> 
+</view>
+
+<view class='shua'>如已经注册请下拉刷新</view>
+<view class='shua'>或者检查网络后重启</view>
+
+</view>  
+</view>
+
+

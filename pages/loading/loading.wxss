@@ -1,0 +1,27 @@
+/* pages/loading/loading.wxss */
+page{
+  height: 100%
+}
+.a{
+  height: 400rpx;
+   text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px
+}
+.b{
+  width: 100%
+}  
+.dj{
+background-color: #f4ea2a;
+width: 300rpx;
+height: 100rpx
+}
+.shua{
+  font-size:30rpx;
+  color: gray;
+  text-align: center;
+}
+

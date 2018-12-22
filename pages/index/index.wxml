@@ -1,0 +1,57 @@
+
+  <view class="userinfo">
+     
+    <block  bindgetuserinfo="getUserInfo" > 
+     <!-- <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>   -->
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+</view>
+
+ 
+<view class="navigator-box">
+<navigator url="/pages/text2/text2" class="navigator">
+         <view class='navigator-image'>
+              <image image src='/pages/Image/instruction.png'></image>
+         </view>
+
+         <view class="navigator-text">使用说明</view>
+         <view class="navigator-arrow"></view>
+      </navigator>
+
+      <navigator url="/pages/order/order" class="navigator">
+         <view class='navigator-image'>
+              <image image src='/pages/Image/order.png'></image>
+         </view>
+
+         <view class="navigator-text">订单详情</view>
+         <view class="navigator-arrow"></view>
+      </navigator>
+
+      <navigator url="/pages/check/check" class="navigator">
+            <view class='navigator-image'>
+                   <image image src='/pages/Image/check.png'></image>
+            </view>
+
+             <view class="navigator-text">账单</view>
+             <view class="navigator-arrow"></view>
+      </navigator>
+
+      <navigator url="/pages/statistics/statistics" class="navigator">
+            <view class='navigator-image'>
+                  <image image src='/pages/Image/statistics.png'></image>
+            </view>
+            <view class="navigator-text">图表</view>
+            <view class="navigator-arrow"></view>
+       </navigator>
+
+      <navigator url="/pages/about/about" class="navigator">
+             <view class='navigator-image'>
+                    <image image src='/pages/Image/about.png'></image>
+             </view>
+             <view class="navigator-text">关于我们</view>
+             <view class="navigator-arrow"></view>
+       </navigator>
+
+       
+ </view>

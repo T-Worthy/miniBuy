@@ -1,0 +1,95 @@
+ <view class='srcoll-title'>
+        <view class='title-record'>语音</view>
+        <view class='title-hand'>
+              <navigator url='/pages/hand/hand'>手动</navigator>
+        </view> 
+ </view>
+
+
+<scroll-view class='shopping-srcoll'  scroll-y="true">
+         
+          
+                <view wx:if="{{!(shoppingListLength==0)}}"   class='srcoll-list' wx:for="{{shoppingList}}"  id="{{index}}" bindlongpress='clearOne'>
+                <view class='list-image'>
+                     <image class='image-name' src='{{item.pictureUrl}}'></image>
+                </view>
+                <view class='list-text'>
+                   <view class='text-top'>
+                       <view class='text-name'>{{item.commName}}</view>
+                      <view class='text-price'>售价：{{item.outprice}} /{{item.classifier}}</view>
+                   </view>
+                    
+                    <view class='text-end'>
+                     
+                       <view class='text-number'>
+                          <button  id="{{index}}" class='{{dec_class}}' bindtap='dec'>-
+                          </button>
+                          <view class='number-digit'>{{item.number}}</view> 
+                         <button  id="{{index}}"class='button-add' bindtap='add'>+
+                          </button>
+                       </view>
+                        <view class='text-money'>合计：{{item.outprice*item.number}}</view>
+                    </view>
+                    
+                </view>
+             </view>
+         
+       
+         
+
+</scroll-view>
+
+
+
+
+
+<view class='block-buy'>
+
+<view class='buy-text'>
+<view class='buynumber'>
+数量：{{buynumber}}
+</view>
+<view class='buynumber'>
+合计：￥{{money}}
+</view>
+</view>
+
+<view class='clear'>
+<button bindtap='clear'>
+清空
+</button>
+</view>
+<view>
+<button class='buy'  bindtap='buy'>
+结算
+</button>
+</view>
+</view>
+
+
+
+<view wx:if="{{isRecord === false}}">
+<view class='page-body-time'>
+
+</view>
+ <view class="page-body-buttons">
+
+          <view class="page-body-button" bindtap="startRecord">
+            <image src='/pages/Image/record.png'></image>
+          </view>
+   
+        </view>
+</view>
+
+<view wx:if="{{isRecord === true}}">
+<view class='page-body-time'>
+
+</view>
+ <view class="page-body-buttons">
+
+      <view class="page-body-button" bindtap="stopRecord">
+            <view class="button-stop-record"></view>
+          </view>
+
+        </view>
+</view>

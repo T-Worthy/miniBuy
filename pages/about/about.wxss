@@ -1,0 +1,22 @@
+.logo{
+  height: 500rpx;
+  padding-left: 130rpx;
+  padding-top: 60rpx
+}
+.image-logo{
+  width: 530rpx;
+  height: 540rpx;
+}
+.our{
+  padding-top: 40rpx;
+  text-align: center;
+  color: #D8D8D8
+}
+.our-cord{
+  padding-top: 20rpx;
+  padding-left: 210rpx;
+}
+.image-cord{
+    width: 330rpx;
+    height: 330rpx;
+}

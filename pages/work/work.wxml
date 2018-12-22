@@ -1,0 +1,83 @@
+<view class='work-top'>
+    <view class='work-top-title'>
+    今日业绩
+    </view>
+    <view class='work-top-block'>
+           <view class='block-list'>
+                     <view class='list-left'>
+                          <view class='list-top'>
+                                 <image class='list-image' src='../Image/pay.png'></image>
+                                  <view>支付金额(元)</view>
+                           </view>
+                           <view class='list-end'>
+                                {{ dailyDaily[0].getMoney}}
+                           </view>
+                     </view>
+                      <view class='list-right'>
+                                <view class='list-top'>
+                                 <image class='list-image' src='../Image/number.png'></image>
+                                  <view>支付订单数</view>
+                           </view>
+                           <view class='list-end'>
+                                {{ dailyDaily[0].count}}
+                           </view>     
+                    </view>
+           </view>
+           <view class='block-list'>
+                    <view class='list-left'>
+                          <view class='list-top'>
+                                 <image class='list-image' src='../Image/stock.png'></image>
+                                  <view>进货金额(元)</view>
+                           </view>
+                           <view class='list-end'>
+                            {{dailyDaily[1].getMoney}}
+                           </view>
+                     </view>
+                      <view class='list-right'>
+                                <view class='list-top'>
+                                 <image class='list-image' src='../Image/stocknumber.png'></image>
+                                  <view>进货数量</view>
+                           </view>
+                           <view class='list-end'>
+                                {{ dailyDaily[1].count}}
+                           </view>    
+                       </view>
+              </view>
+       </view>
+       </view>
+ <view class='work-body'>
+           <view class='body-list'>
+
+           <view class='body-list-left' bindtap='changeshopping'>
+                   <image class='body-list-image' src='../Image/money.png'></image>
+                   <view class='body-list-text'>收银</view>
+               </view>
+               <!-- <navigator class='body-list-left' url='../shopping/shopping' open-type="switchTab">
+                   <image class='body-list-image' src='../Image/money.png'></image>
+                   <view class='body-list-text'>收银</view>
+               </navigator> -->
+               
+               <navigator class='body-list-middle' url='../stock/stock'>
+                   <image class='body-list-shoppingimage' src='../Image/goods.png'></image>
+                   <view class='body-list-text2'>商品管理</view>
+               </navigator>
+               <navigator class='body-list-left' url='../workstock/workstock'>
+                    <image class='body-list-stockimage' src='../Image/goodsstock.png'></image>
+                    <view class='body-list-text3'>库存管理</view>
+               </navigator>
+           </view>
+           <view class='body-list'>
+               <navigator class='body-list-left' url='../order/order'>
+                   <image class='body-list-image' src='../Image/init.png'></image>
+                   <view class='body-list-text4'>订单管理</view>
+               </navigator>
+               <navigator class='body-list-middle' url='../bill/bill'>
+                   <image class='body-list-shoppingimage' src='../Image/stocknumber.png'></image>
+                   <view class='body-list-text2'>存货清单</view>
+               </navigator>
+               <navigator class='body-list-left' url='../statistics/statistics'>
+                    <image class='body-list-stockimage' src='../Image/statistics.png'></image>
+                    <view class='body-list-text3'>数据统计</view>
+               </navigator>
+           </view>
+</view>

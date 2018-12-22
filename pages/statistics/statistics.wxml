@@ -1,0 +1,44 @@
+<view class='statistics-top'>
+<view class='top-button'>
+<view class="{{weekss}}" bindtap='changemonth'>
+月
+</view>
+<view class="{{monthss}}" >
+周
+</view>
+  <view class='{{yearss}}' bindtap='changeday'>
+日
+</view>  
+
+</view>
+</view>
+
+<!-- <view wx:if="{{!isMainChartDisplay}}" bindtap="backToMainChart">返回</view> -->
+
+<view class="container">
+              <view class='body-week'>
+                  <view class='this-week'>
+                    {{title}}
+                  </view>
+              </view>
+              <view class='week-money'>
+                  <view class='money'>
+                  总利润：￥{{allmoney}}
+                  </view>
+                  <view  class='money'>
+                        平均值：￥{{average}}
+                  </view>
+              </view>
+
+                  <!-- <view class='picture'> -->
+<canvas canvas-id="columnCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+                  <!-- </view> -->
+<scroll-view scroll-y="true">
+<view class='title'>
+销售排行榜
+</view>
+</scroll-view>
+      
+
+
+</view>

@@ -1,0 +1,40 @@
+.page{
+  height: 100%
+}
+.goods-body{
+  padding:  0 20rpx;
+}
+.goods-image{
+  height: 300rpx;
+  width: 100%;
+  text-align: center;
+  padding-top: 20rpx;
+}
+image{
+  height: 270rpx;
+  width: 270rpx;
+}
+.body-title{
+  width: 450rpx;
+  background-color: #f3f5f6;
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 170rpx;
+}
+.title-text{
+  font-size: 35rpx;
+}
+.body-button{
+  display: flex;
+  margin-top: 70rpx
+}
+.button-buy{
+   width: 100px;
+  margin-left: 20rpx;
+}
+.button-delete{
+ width: 100px;
+ margin-right:20rpx;
+background-color: red;
+}
+

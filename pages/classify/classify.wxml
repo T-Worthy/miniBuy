@@ -1,0 +1,23 @@
+  <scroll-view class='classify-scroll'>
+ 
+  <view wx:for="{{classifyArray}}">
+  <view class='classify-list' >
+  <view class='list-text' id='{{index}}' bindtap='back' >
+        {{item.classify}}
+  </view>
+                <view class='list-image' bindtap='delete' id='{{item.id}}'>
+                   <image src='../Image/sub.png'></image>
+                 </view>
+          </view>  
+        </view>  
+ </scroll-view>
+
+<form  bindsubmit="formSubmit">
+ <view class='submit-input'> 
+  <input name='classify' placeholder='请输入新建分类名'></input>
+  </view>
+            <view  class='submit-button'>
+               <button form-type='submit'>新建分类</button>
+              </view>
+  </form>
+ 

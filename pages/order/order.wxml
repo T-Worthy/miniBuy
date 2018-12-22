@@ -1,0 +1,27 @@
+<scroll-view class="bill-body" scroll-y="true">
+
+<view wx:for="{{inStockList}}"  wx:for-index="i" wx:for-item="vi" >
+
+<view class="bill-time">
+<view>{{vi.date}}</view> 
+<view class='money'>营业额：￥{{dateCost[i]}}</view>
+  </view>
+
+
+<view class="navview1">
+<view class="text11">名称</view>
+<view class="text22">数量</view>
+<view class="text2">收银</view>
+</view>
+
+<view class="bill-jhqd" wx:for="{{vi.array}}"   wx:for-index="j" wx:for-item="vj" >
+ <view class="text5"> {{vj.commName}} </view> 
+ <view class="text6">  {{vj.number}}{{vj.classifier}} </view>
+ <view class="text7">  ￥{{vj.getMoney}} </view>
+
+      
+</view>
+ 
+</view>
+
+</scroll-view>

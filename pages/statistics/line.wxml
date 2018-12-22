@@ -1,0 +1,23 @@
+<view class='statistics-top'>
+<view class='top-button'>
+<view class="{{weekss}}" bindtap='changemonth'>
+月
+</view>
+<view class="{{monthss}}" >
+周
+</view>
+  <view class='{{yearss}}' bindtap='changeday'>
+日
+</view>  
+
+</view>
+</view>
+<!-- <view class="container">
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas"></canvas>
+     <button type="primary" bindtap="updateData">更新数据</button> 
+</view> 
+-------------------------------------------->
+<view class="container">
+    <canvas canvas-id="lineCanvas2" disable-scroll="true" class="canvas" bindtouchstart="touchHandler2" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
+    <view style="margin-top:30px;text-align:center">拖动图表查看</view>
+</view>

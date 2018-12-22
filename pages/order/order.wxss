@@ -1,0 +1,82 @@
+page{
+  background-color: #f3f5f6 
+}
+.bill-time
+{
+   display: flex;
+   background-color: #f4ea2a 
+}
+.bill-jhqd{
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #D8D8D8;
+  height: 50px;
+  background-color: white
+}
+.top{
+  display: flex;
+  border-bottom: 1rpx solid #f4ea2a;
+}
+.toptext{
+  margin-top: 10px;
+}
+.jhqd{
+  width: 100px;
+  margin-right: 0px;
+}
+.title{
+  border-bottom: 1rpx solid #D8D8D8;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #D8D8D8;
+  height: 50px;
+}
+
+.navview{
+  display: flex;
+   width:100%; 
+}
+.navview1{
+  display: flex;
+   width:100%; 
+  border-bottom: 1rpx solid #D8D8D8;
+  color: grey;
+}
+.text1{
+  width:50%;
+}
+.text11{
+  width:45%;
+  font-size: 15px;
+}
+.text22{
+  width:35%;
+  font-size: 15px;
+}
+.text2{
+  width:20%;
+  font-size: 15px;
+}
+.jh{
+  padding: 0;
+  margin: 0;
+  font-size: 15rpx;
+}
+.text5{
+  width: 40%;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.text6{
+  width: 40%
+}
+.text7{
+  width: 20%
+}
+.money{
+  margin-left: 250rpx;
+}

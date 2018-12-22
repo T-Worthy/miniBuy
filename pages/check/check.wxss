@@ -1,0 +1,92 @@
+page{
+  height: 100%;
+}
+.check-top{
+  height: 400rpx;
+  background-color: #f4ea2a
+}
+.top-remain{
+  height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  padding-top: 30rpx;
+  color: #999999
+
+}
+.top-remain-monet{
+  height: 150rpx;
+  text-align: center;
+  font-size: 70rpx;
+  padding-top: 30rpx;
+}
+.top-end{
+  display: flex;
+}
+.end-income{
+  font-size: 30rpx;
+  color: #999999;
+  padding-top: 10rpx;
+  margin-left: 80rpx;
+}
+.income-money{
+  font-size: 43rpx;
+  margin-left: 40rpx;
+  text-align: center;
+  width: 180rpx
+}
+.end-null{
+  color: #999999;
+  margin-left: 10rpx;
+}
+.end-pay{
+  font-size: 30rpx;
+  color: #999999;
+  padding-top: 10rpx;
+  margin-left: 30rpx;
+}
+.pay-money{
+  font-size: 43rpx;
+  margin-left: 40rpx;
+  text-align: center;
+  width: 180rpx
+}
+.scroll-title{
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  color: #999999;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #D8D8D8;
+  padding-top: 10rpx;
+}
+.title-time{
+  width: 35%;
+  text-align: center
+}
+.title-income{
+  width: 35%;
+  text-align: center
+}
+.title-pay{
+  width: 30%;
+  text-align: center
+}
+.scroll-list{
+   height:60rpx;
+  display: flex;
+  width: 100%;
+  font-size: 36rpx;
+  border-bottom: 1rpx solid #D8D8D8;
+  padding-top: 30rpx;
+}
+.list-time{width: 35%;
+  text-align: center
+}
+.list-income{
+  width: 35%;
+  text-align: center
+}
+.list-pay{
+  width: 30%;
+  text-align: center
+}

@@ -1,0 +1,249 @@
+page{
+  background-color: #f3f5f6;
+}
+.sub-list{
+  width: 100%;
+  height: 80rpx;
+  background-color: white;
+  font-size: 37rpx;
+  display: flex;
+  border-bottom: 1rpx solid #f3f5f6
+}
+.list-image-text{
+   width: 100%;
+  height: 250rpx;
+  background-color: white;
+  font-size: 37rpx;
+  border-bottom: 1rpx solid #f3f5f6
+}
+.list-text2{
+  width: 180rpx;
+  height: 20%;
+  padding-left: 20rpx;
+  padding-top: 14rpx
+}
+.list-text{
+  width: 180rpx;
+  padding-left: 20rpx;
+  padding-top: 14rpx
+}
+.list-input2{
+  width: 470rpx;
+  padding-top: 13rpx;
+  font-size: 30rpx
+}
+.list-input{
+   width: 550rpx;
+  padding-top: 15rpx;
+  font-size: 30rpx
+}
+.image-list{
+  padding-top: 13rpx
+}
+.list-image{
+  width: 55rpx;
+  height: 55rpx
+}
+image {
+  width: 150rpx;
+  height: 150rpx;
+}
+.image-number{
+  margin-left: 20rpx;
+  margin-top: 20rpx
+}
+.submit-number{
+  margin-top: 50rpx
+}
+.submit-choice{
+    margin-top: 50rpx
+}
+
+ .xz{
+width:480rpx;
+  padding-top: 4rpx;
+} 
+.navigator-arrow {
+  padding-right: 26rpx;
+  position: relative;
+}
+.navigator-arrow:after {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 2rpx 2rpx 0 0;
+  border-color: #888888;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -28rpx;
+  right: 28rpx;
+}
+
+
+
+
+
+
+ .choice{
+  height: 80rpx;
+  width: 100%;
+  background-color: #f4ea2a;
+  display: flex
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.choice-hand{
+  text-align: center;
+  margin-left: 480rpx;
+  margin-top: 20rpx;
+  width: 120rpx;
+  height: 50rpx;
+  border: 1rpx solid black;
+  border-bottom-left-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+  background-color: black;
+  color: #f4ea2a
+}
+.choice-hand2{
+  text-align: center;
+  margin-left: 480rpx;
+  margin-top: 20rpx;
+  width: 120rpx;
+  height: 50rpx;
+  border: 1rpx solid black;
+  border-bottom-left-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+}
+.choice-record{
+ text-align: center;
+  margin-top: 20rpx;
+   width: 120rpx;
+   height: 50rpx;
+  border: 1rpx solid black;
+  border-bottom-right-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+.choice-record2{
+ text-align: center;
+  margin-top: 20rpx;
+   width: 120rpx;
+   height: 50rpx;
+  border: 1rpx solid black;
+  border-bottom-right-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+   background-color: black;
+  color: #f4ea2a
+}
+
+.top{
+  background-color: #f4ea2a
+}
+.jhtext{
+   margin: 20rpx 0;
+  padding-top: 10rpx;
+  height: 70rpx;
+  background-color: #FFFFFF;
+  font-size: 41rpx;
+  border-radius: 4rpx;
+  overflow: hidden;
+  display: flex
+}
+.name-image{
+   padding:  0rpx 30rpx 40rpx ;
+    height: 150rpx
+}
+.commName-image{
+   margin: 20rpx 0;
+  height: 230rpx;
+  background-color: #FFFFFF;
+  border-radius: 4rpx;
+  overflow: hidden
+}
+.inprice{
+   padding: 20rpx 30rpx 40rpx;
+   margin-top: 20rpx;
+    height: 40rpx
+}
+.jhtext1{
+    padding: 20rpx 30rpx 40rpx;
+    height: 40rpx
+}
+.tj{
+  width: 300rpx;
+}
+.dq{
+  /* width: 17%; */
+  font-size: 40rpx;
+  color: gray
+}
+
+.dw{
+  /* width:83%; */
+  background-color: #ffffff;
+  border-top: 10rpx solid #f3f5f6;
+  text-align: center
+}
+.tj{
+     margin-top: 25rpx;
+background-color: #f4ea2a;
+  width: 700rpx; 
+ height: 100rpx
+}
+.jhinput{
+ background-color: #ffffff;
+ text-align: center
+}
+
+
+.page-body-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20rpx;
+}
+.page-body-buttons {
+
+  display: flex;
+  justify-content: space-around;
+}
+.page-body-button {
+  margin-top: 20rpx;
+  width: 250rpx;
+  text-align: center;
+}
+.button-stop-record {
+  width: 110rpx;
+  height: 110rpx;
+  border: 20rpx solid #fff;
+  background-color: #f55c23;
+  border-radius: 130rpx;
+  margin: 0 auto;
+}
+
+.submit-list-image{
+  margin-left: 300rpx;
+  height: 180rpx;
+  width: 180rpx;
+  background-color: white;
+  text-align: center;
+  padding-top: 20rpx
+}
+.sweep{
+  width: 30rpx;
+  height: 30rpx
+} 
